@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Giant Step - Situs Pengetahuan</title>
+<meta content="In group theory, a branch of mathematics, the baby-step giant-step is a meet-in-the-middle algorithm for computing the discrete logarithm or order of " name="description"/>
+<style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .container { display: flex; }
+        .content { flex: 3; padding-right: 20px; }
+        .sidebar { flex: 1; background: #f5f5f5; padding: 15px; }
+        nav { background: #333; padding: 10px; margin-bottom: 20px; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; }
+        img { max-width: 100%; height: auto; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .ad-container { margin: 20px 0; text-align: center; }
+    </style>
+</head>
+<body>
+<nav>
+<a href="https://situsanda.com">Beranda</a>
+<a href="https://situsanda.com/kategori.html">Kategori</a>
+</nav>
+<div class="container">
+<div class="content">
+<h1>Giant Step</h1>
+<img alt="Giant Step" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Industry5.svg"/>
+            
+            In group theory, a branch of mathematics, the baby-step giant-step is a meet-in-the-middle algorithm for computing the discrete logarithm or order of an element in a finite abelian group by Daniel Shanks. The discrete log problem is of fundamental importance to the area of public key cryptography.<br/><br/>Many of the most commonly used cryptography systems are based on the assumption that the discrete log is extremely difficult to compute; the more difficult it is, the more security it provides a data transfer. One way to increase the difficulty of the discrete log problem is to base the cryptosystem on a larger group.<br/><br/><br/><br/><br/><br/>== Theory ==<br/><br/>The algorithm is based on a space–time tradeoff. It is a fairly simple modification of trial multiplication, the naive method of finding discrete logarithms.<br/><br/>Given a cyclic group <br/><br/> <br/><br/> <br/><br/> <br/><br/>        G<br/><br/> <br/><br/> <br/><br/>    {\displaystyle G}<br/><br/> <br/><br/> of order <br/><br/> <br/><br/> <br/><br/> <br/><br/>        n<br/><br/> <br/><br/> <br/><br/>    {\displaystyle n}<br/><br/> <br/><br/>, a generator <br/><br/> <br/><br/> <br/><br/> <br/><br/>        α<br/><br/> <br/><br/> <br/><br/>    {\displaystyle \alpha }<br/><br/> <br/><br/> of the group and a group element <br/><br/> <br/><br/> <br/><br/> <br/><br/>        β<br/><br/> <br/><br/> <br/><br/>    {\displaystyle \beta }<br/><br/> <br/><br/>, the problem is to find an integer <br/><br/> <br/><br/> <br/><br/> <br/><br/>        x<br/><br/> <br/><br/> <br/><br/>    {\displaystyle x}<br/><br/> <br/><br/> such that<br/><br/><br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          α<br/><br/> <br/><br/>            x<br/><br/> <br/><br/> <br/><br/>        =<br/><br/>        β<br/><br/> <br/><br/>        .<br/><br/> <br/><br/> <br/><br/>    {\displaystyle \alpha ^{x}=\beta \,.}<br/><br/> <br/><br/><br/><br/>The baby-step giant-step algorithm is based on rewriting <br/><br/> <br/><br/> <br/><br/> <br/><br/>        x<br/><br/> <br/><br/> <br/><br/>    {\displaystyle x}<br/><br/> <br/><br/>:<br/><br/><br/><br/> <br/><br/> <br/><br/> <br/><br/>        x<br/><br/>        =<br/><br/>        i<br/><br/>        m<br/><br/>        +<br/><br/>        j<br/><br/> <br/><br/> <br/><br/>    {\displaystyle x=im+j}<br/><br/> <br/><br/><br/><br/> <br/><br/> <br/><br/> <br/><br/>        m<br/><br/>        =<br/><br/> <br/><br/>          ⌈<br/><br/> <br/><br/> <br/><br/>              n<br/><br/> <br/><br/> <br/><br/>          ⌉<br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle m=\left\lceil {\sqrt {n}}\right\rceil }<br/><br/> <br/><br/><br/><br/> <br/><br/> <br/><br/> <br/><br/>        0<br/><br/>        ≤<br/><br/>        i<br/><br/>        &lt;<br/><br/>        m<br/><br/> <br/><br/> <br/><br/>    {\displaystyle 0\leq i<m}<br><br/> <br/><br/><br/><br/> <br/><br/> <br/><br/> <br/><br/>        0<br/><br/>        ≤<br/><br/>        j<br/><br/>        &lt;<br/><br/>        m<br/><br/> <br/><br/> <br/><br/>    {\displaystyle 0\leq j<m}<br><br/> <br/><br/><br/><br/>Therefore, we have:<br/><br/><br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          α<br/><br/> <br/><br/>            x<br/><br/> <br/><br/> <br/><br/>        =<br/><br/>        β<br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle \alpha ^{x}=\beta \,}<br/><br/> <br/><br/><br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          α<br/><br/> <br/><br/>            i<br/><br/>            m<br/><br/>            +<br/><br/>            j<br/><br/> <br/><br/> <br/><br/>        =<br/><br/>        β<br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle \alpha ^{im+j}=\beta \,}<br/><br/> <br/><br/><br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          α<br/><br/> <br/><br/>            j<br/><br/> <br/><br/> <br/><br/>        =<br/><br/>        β<br/><br/> <br/><br/> <br/><br/>            (<br/><br/> <br/><br/>              α<br/><br/> <br/><br/>                −<br/><br/>                m<br/><br/> <br/><br/> <br/><br/>            )<br/><br/> <br/><br/> <br/><br/>            i<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle \alpha ^{j}=\beta \left(\alpha ^{-m}\right)^{i}\,}<br/><br/> <br/><br/><br/><br/>The algorithm precomputes <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          α<br/><br/> <br/><br/>            j<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle \alpha ^{j}}<br/><br/> <br/><br/> for several values of <br/><br/> <br/><br/> <br/><br/> <br/><br/>        j<br/><br/> <br/><br/> <br/><br/>    {\displaystyle j}<br/><br/> <br/><br/>. Then it fixes an <br/><br/> <br/><br/> <br/><br/> <br/><br/>        m<br/><br/> <br/><br/> <br/><br/>    {\displaystyle m}<br/><br/> <br/><br/> and tries values of <br/><br/> <br/><br/> <br/><br/> <br/><br/>        i<br/><br/> <br/><br/> <br/><br/>    {\displaystyle i}<br/><br/> <br/><br/> in the right-hand side of the congruence above, in the manner of trial multiplication. It tests to see if the congruence is satisfied for any value of <br/><br/> <br/><br/> <br/><br/> <br/><br/>        j<br/><br/> <br/><br/> <br/><br/>    {\displaystyle j}<br/><br/> <br/><br/>, using the precomputed values of <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          α<br/><br/> <br/><br/>            j<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle \alpha ^{j}}<br/><br/> <br/><br/>.
+        </m}<br></m}<br></div>
+<div class="sidebar">
+<div class="ad-container">
+<script type="text/javascript">
+                            atOptions = {
+                                'key': '0cfd3aa635d270e67b5af101e4d64321',
+                                'format': 'iframe',
+                                'height': 250,
+                                'width': 300,
+                                'params': {}
+                            };
+                        </script>
+<script src="//padsims.com/0cfd3aa635d270e67b5af101e4d64321/invoke.js" type="text/javascript"></script>
+</div>
+
+<h3>Artikel Terkait</h3>
+<ul>
+<li><a href="berlin-brandenburg-airport.html">Berlin Brandenburg Airport</a></li>
+<li><a href="list-of-great-floridians.html">List of Great Floridians</a></li>
+<li><a href="georgetown-university-alumni-&amp;-student-federal-credit-union.html">Georgetown University Alumni &amp; Student Federal Credit Union</a></li>
+<li><a href="list-of-current-inmates-at-adx-florence.html">List of current inmates at ADX Florence</a></li>
+<li><a href="climate-change-and-insurance-in-the-united-states.html">Climate change and insurance in the United States</a></li>
+</ul>
+</div>
+</div>
+<footer>
+<p>© 2023 Situs Pengetahuan</p>
+</footer>
+</body>
+</html>
